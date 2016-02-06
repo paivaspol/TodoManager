@@ -2,20 +2,16 @@
 
 /**
  * @ngdoc function
- * @name frontendApp.controller:MainCtrl
+ * @name frontendApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the frontendApp
  */
 angular.module('frontendApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('AddTodoCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    $http.get('http://localhost:5000')
-      .then(function(response) {
-        console.log(response);
-      });
   });

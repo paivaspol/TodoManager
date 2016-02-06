@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/add_todo', {
+        templateUrl: 'views/add_todo.html',
+        controller: 'AddTodoCtrl',
+        controllerAs: 'addTodo'
+      })
       .otherwise({
         redirectTo: '/'
       });
